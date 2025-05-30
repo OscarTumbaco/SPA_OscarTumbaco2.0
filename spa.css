@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playwrite+CO+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Romanesco&family=Trade+Winds&display=swap');
+html, body, main {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* *{
+    border: 2px solid aquamarine;	
+} */
+.menu{
+    background-color: #A3A656;
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 150px;
+    align-items: center;
+}
+
+.menu-left ul{
+    list-style: none;
+    padding: 0;
+    margin-left: 70px;
+}
+
+.menu-left li{
+    display: inline-block;
+    font-family: "Inter","Regular", sans-serif;
+    font-size: 16px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.menu-left li:hover{
+    color: #FFFF00;
+}
+
+.menu-center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+}
+.menu-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    padding-top: 4px;
+}
+
+.user{
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+}
+.flag{
+    margin-top: 7px;
+    width: 44px;
+    height: 34px;
+}
+.arrow{
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+/* ----------------- ESLOGAN CONTAINER------------------------------------- */
+.eslogan{
+    width: 100%;
+    height: 667px;
+    background-image: url('../images/main.png');
+    background-size: cover;
+    background-position: center;   
+}
+.eslogan-content{
+    padding: 180px 0 0 180px;
+}
+.title-eslogan{
+    font-family: "Romanesco", cursive;
+    font-size: 96px;
+}
+
+.text-eslogan{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+/* ----------------- INPUT CONTAINER------------------------------------- */
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: #F2F6F6;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+.input-cita, .input-codigo{
+    display: flex;
+    gap: 25px;
+}
+.input-cita label, .input-codigo label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-cita input{
+    display: flex;
+    width: 270px;
+    height: 55px;
+    border-radius: 15px;
+    padding-left: 13px;
+    border:none;
+}
+
+.input-codigo input{
+    display: flex;
+    width: 210px;
+    height: 55px;
+    border-radius: 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    color: #9E9A9A;
+    border:none;
+}
+
+/* ------------------CART CONTAINER ----------------*/
+.cart-container-1{
+    width: 100%;
+    height: 600px;
+}
+.cart-container-2{
+    display: flex;
+    flex-direction: row;
+	gap: 134px;
+    margin-left: 110px;
+    margin-bottom: 60px;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 480px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color:  #A3A656;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.cart-title{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px; 
+    font-weight: bold;
+    color: #fffefe;
+}
+.cart-desc{
+    font-size: 17px;
+    margin-top: -5px;
+    background-color: white;
+}
+
+.cart-price{
+    display: flex;
+    flex-direction: row;
+    gap:120px;
+
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 30px 15px;
+}
+.cart-price div{
+
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.cart-price button{
+    background-color:  #A3A656;
+    border-radius:35px;
+    font-size: 15px;
+    padding: 16px 37px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.cart-price button:hover{
+    background-color: #384001;
+
+}
+/* ------------------------------PLANES CONTAINER-------------------- */
+
+.socio-container{
+    margin-top: 40px;
+    width: 100%;
+    height: 700px;
+    background-color: #F2F6F6;
+}
+.socio-container-title {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.planes-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    padding-top: 30px;
+    align-items: flex-start;
+    
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.plan-img{
+    width: 233px;
+    height: 233px;
+    border: 12px solid #384001;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.plan-name{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-size: 30px;
+    margin-bottom: 30px; 
+    font-weight: bold;
+    color: #000000;
+}
+.plan-button{
+    background-color:  #A3A656;
+    border-radius:35px;
+    font-size: 15px;
+    width: 285px;
+    padding: 16px 37px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.plan-button:hover{
+    background-color: #384001;
+}
+.plan-benefits{
+    margin-top: 30px;
+}
+.plan-benefits li{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+/* -----------------------------FOOTER----------------------------- */
+.footer{
+    width: 100%;
+    height: 97px;
+    background-color: #384001;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+}
+
+.footer-options{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: "Inter","Regular", sans-serif;
+    font-size: 16px;
+    color: #A3A656;
+    padding-left: 70px;
+
+}
+.footer-options li{
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 70px;
+    cursor: pointer;
+}
+
+.footer-options li:hover{
+    color: #FFFF00;
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-family: "Inter","Regular", sans-serif;
+    font-size: 16px;
+    color: #A3A656;
+    padding-right: 60px;
+}
+.footer-social img{
+    cursor: pointer;
+}
